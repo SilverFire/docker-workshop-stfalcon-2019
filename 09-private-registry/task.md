@@ -1,7 +1,7 @@
 # Task
 
-1. Start docker-compose, refresh `index.php` and see counter is growing.
+1. Create a private Docker registry
 
-2. Restart docker-compose and see, that counter has been reset.
+2. Tag the built image and push it
 
-3. Change `docker-compose` to store MySQL data on host machine.
+3. Make sure the image it is available on the local docker hub

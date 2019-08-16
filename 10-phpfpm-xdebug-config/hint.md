@@ -11,10 +11,10 @@ RUN { \
 } | tee -a /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 ```
 
-3. Run `docker build -t softyfire/php:7.2-fpm .`
+3. Run `docker build -t softyfire/php:7.3-fpm .`
 
 4. Ensure config is applied
 
 ```bash
-docker run --rm -it softyfire/php:7.2-fpm cat /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+docker run --rm softyfire/php:7.3-fpm cat /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 ```

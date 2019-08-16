@@ -17,6 +17,6 @@ services:
 3. Run service and try pushing image to it:
 
 ```bash
-docker tag softyfire/php:7.2-fpm localhost:2099/softyfire/php:7.2-fpm
-docker push localhost:2099/softyfire/php:7.2-fpm
+docker tag softyfire/php:7.3-fpm localhost:2099/softyfire/php:7.3-fpm
+docker push localhost:2099/softyfire/php:7.3-fpm
 ```

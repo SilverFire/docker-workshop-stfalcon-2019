@@ -2,7 +2,7 @@ version: "3"
 
 services:
     php-fpm:
-        image: softyfire/php:7.2-fpm
+        image: softyfire/php:7.3-fpm
         volumes:
             - ${PWD}/app:/app
 
@@ -20,6 +20,6 @@ services:
         image: mysql:5.7
         environment:
             - MYSQL_DATABASE=test
-            - MYSQL_USER=demo
-            - MYSQL_PASSWORD=demo
+            - "MYSQL_USER=${MYSQL_USER}"
+            - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
             - MYSQL_RANDOM_ROOT_PASSWORD=1

@@ -34,16 +34,16 @@ ENTRYPOINT ["xdebug-aware-entrypoint"]
 CMD ["php-fpm"]
 ```
 
-3. Build image: `docker build -t softyfire/php:7.2-fpm .`
+3. Build image: `docker build -t softyfire/php:7.3-fpm .`
 
 4. Ensure XDebug is disabled when env is not dev:
 
 ```bash
-docker run --rm -it softyfire/php:7.2-fpm php -i | grep xdebug
+docker run --rm -it softyfire/php:7.3-fpm php -i | grep xdebug
 ```
 
 5. Ensure XDebug gets enabled and properly configured with the required envronment variables:
 
 ```bash
-docker run --rm -it --env ENV=dev --env XDEBUG_REMOTE_HOST=192.168.1.10 softyfire/php:7.2-fpm php -i | grep xdebug | grep -E "host|port|enabled"
+docker run --rm -it --env ENV=dev --env XDEBUG_REMOTE_HOST=192.168.1.10 softyfire/php:7.3-fpm php -i | grep xdebug | grep -E "host|port|enabled|remote_enable"
 ```

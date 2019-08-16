@@ -1,3 +1,3 @@
 # Task
 
-Run `app/index.php` inside Docker container with PHP 7.2.
+Run `app/index.php` inside Docker container with PHP 7.3.

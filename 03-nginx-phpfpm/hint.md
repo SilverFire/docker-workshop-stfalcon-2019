@@ -1,6 +1,6 @@
 1. Start PHP-FPM
 ```bash
-docker run --rm -d --name -v $PWD/app:/app php-fpm php:7.2-fpm
+docker run --rm -d --name php-fpm -v $PWD/app:/app php:7.3-fpm
 ```
 
 2. Ensure container is running:

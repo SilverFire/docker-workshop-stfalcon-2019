@@ -2,7 +2,7 @@ version: "3"
 
 services:
     php-fpm:
-        image: softyfire/php:7.2-fpm
+        image: softyfire/php:7.3-fpm
         volumes:
             - ${PWD}/app:/app
 

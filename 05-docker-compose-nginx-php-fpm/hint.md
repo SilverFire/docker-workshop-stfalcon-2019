@@ -6,7 +6,7 @@ version: "3"
 services:
 
     php-fpm:
-        image: php:7.2-fpm
+        image: php:7.3-fpm
         volumes:
             - ${PWD}/app:/app
 
@@ -18,7 +18,6 @@ services:
             - 2080:80
         volumes:
             - ${PWD}/app:/app
-            -
 ```
 
 2. Run it with `docker-compose up`, ensure site is working
